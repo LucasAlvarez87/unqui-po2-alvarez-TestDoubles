@@ -11,11 +11,11 @@ public class Carta {
 	}
 	
 	public Valor getValor() {
-		return valor;
+		return this.valor;
 	}
 
 	public Color getColor() {
-		return color;
+		return this.color;
 	}
 
 	public boolean esMayorA(Carta carta) {

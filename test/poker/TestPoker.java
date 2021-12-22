@@ -1,11 +1,11 @@
 package poker;
 
+import static org.mockito.Mockito.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*; 
 
 
 public class TestPoker {
@@ -20,10 +20,14 @@ public class TestPoker {
 	private Carta carta7;
 	private Carta carta8;
 	private Carta carta9;
+
+
 	
 	@BeforeEach
 	public void setUp() {
+		
 		pokerStatus = new PokerStatus();
+
 		carta1 = new Carta(Valor.AS, Color.CORAZONES);
 		carta2 = new Carta(Valor.AS, Color.DIAMANTES);
 		carta3 = new Carta(Valor.AS, Color.PICAS);
@@ -33,6 +37,8 @@ public class TestPoker {
 		carta7 = new Carta(Valor.DIEZ, Color.TREBOLES);
 		carta8 = new Carta(Valor.CUATRO, Color.TREBOLES);
 		carta9 = new Carta (Valor.DIEZ, Color.DIAMANTES);
+		
+		
 	}
 	
 	@Test

@@ -60,6 +60,9 @@ public class PokerStatus {
 		return igualesAC1.count() == 5;
 	}
 	*/
+	public PokerStatus() {
+		super();
+	}
 	
 	public String verificar(Carta c1, Carta c2, Carta c3, Carta c4, Carta c5 ) {
 		if (this.esPoker(c1, c2, c3, c4, c5)) {
@@ -88,9 +91,6 @@ public class PokerStatus {
 		return c1.getValor().equals(c2.getValor());
 	}
 	
-	public PokerStatus() {
-		super();
-	}
 	
 	public boolean esMismoColor(Carta c1, Carta c2) {
 		 return c1.getColor().equals(c2.getColor());
@@ -109,4 +109,6 @@ public class PokerStatus {
 		Stream <Carta> igualesAC1 = cartas.stream().filter(c -> this.esMismoColor(c1, c));
 		return igualesAC1.count() == 5;
 	}
+	
+	public 
 }
